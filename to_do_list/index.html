@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do list maker</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Need to add aria-label and also aria-live before adding them read about them  -->
+    <!-- Header part of the web page -->
+    <header>
+      <h1 class="heading">To Do</h1>
+      <h2 class="my-day">My Day</h2>
+      <p id="date"></p>
+    </header>
+    <main>
+        <!-- this part take input from user -->
+       <div class="icon-input">
+        <i class="fa-regular fa-circle icon"></i>
+        <input type="text" placeholder="Add a Task" class="tasks" />
+       </div>
+      <!-- button to sumbmit the tasks to list items -->
+      <button class="btn">Add</button>
+      <div>
+        <ul id="task-items">
+          <!-- here the task will appear when we click on the add button -->
+        </ul>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

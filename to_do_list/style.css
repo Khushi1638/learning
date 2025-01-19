@@ -1,0 +1,98 @@
+/* need to add respossiveness in  the to  do list for mobile version */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:#faf9f8;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling the heading */
+.heading{
+    font-size: 1.5rem;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0074B7;
+    color: #fff;
+}
+/* styling the heading 2 */
+.my-day {
+    margin:25px 10px 3px 25px;
+    color: #353434;
+}
+/* Styling the date */
+p{
+    margin: 3px 0 50px 25px;
+    color: #353434;
+}
+/* Styling the div where is our icon and inout box */
+.icon-input{
+    display: flex;
+    width: 96%;
+    align-items: center;
+    margin-left: 25px;
+    height: 48px;
+    background: #fff;
+    padding-left: 25px;
+    border: 1px solid rgb(219, 218, 218);
+    gap: 10px;
+}
+
+.icon{
+    background-color: #fff;
+    color: #0074B7;
+}
+/* Styling the input  */
+.tasks{
+    border: none;
+    background-color: #fff;
+    width: 96%;
+    height: 46px;
+    font-size: 0.95rem;
+}
+/* This will change the color of input placeholder */
+.tasks::placeholder{
+    color: #0074B7;
+}
+/* This class is added to input placeholder dynamically by js */
+.dynamic-task::placeholder{
+    color: #353434;
+}
+
+.tasks:focus{
+    outline: none;
+}
+
+/* Styling the  button  */
+.btn{
+    background-color: #fff;
+    color: #0074B7;
+    margin-top: 25px;
+    margin-left: 25px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border: 1px solid rgb(219, 218, 218);
+    cursor: pointer;
+}
+/* Styling the list item which are dynamically added */
+#task-items li{
+    border-radius: 5px;
+    width: 96%;
+    background-color: #fff;
+    color:#353434;
+    margin-top: 15px;
+    margin-left: 25px;
+    padding: 15px;
+    font-size: 0.9rem;
+    border: 1px solid rgb(219, 218, 218);
+    cursor: pointer;
+    list-style: none;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2) ;
+}
+
+#task-items li:hover{
+    background-color: #faf9f8;
+}
