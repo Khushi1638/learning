@@ -14,26 +14,28 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Need to add aria-label and also aria-live before adding them read about them  -->
     <!-- Header part of the web page -->
     <header>
       <h1 class="heading">To Do</h1>
       <h2 class="my-day">My Day</h2>
-      <p id="date"></p>
+      <p id="date" aria-label="today date"></p>
     </header>
-    <main>
+    <main role="main">
         <!-- this part take input from user -->
        <div class="icon-input">
-        <i class="fa-regular fa-circle icon"></i>
-        <input type="text" placeholder="Add a Task" class="tasks" />
+        <i class="fa-regular fa-circle icon" aria-hidden="true"></i>
+        <label for="task-input" class="visibility-hidden">Add a Task</label>
+        <input id="task-input" type="text" placeholder="Add a Task" class="tasks" aria-label="enter the task here"/>
        </div>
       <!-- button to sumbmit the tasks to list items -->
-      <button class="btn">Add</button>
-      <div>
-        <ul id="task-items">
+      <button class="btn" aria-label="add">Add</button>
+      <div class="container">
+        <ul id="task-items" aria-live="polite" aria-label="List of tasks">
           <!-- here the task will appear when we click on the add button -->
         </ul>
+        <!-- This button will clear all the list item that is added all at once -->
       </div>
+      <button class="clear" aria-label="clear all task">Clear All</button>
     </main>
 
     <script src="app.js"></script>
