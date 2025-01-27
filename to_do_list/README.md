@@ -72,8 +72,8 @@ items.addEventListener("click", function(evt) {
 5. **Accessibility**: Added ARIA attributes and improved accessibility for users with disabilities. This includes using aria-label and     visibility-hidden classes for better screen reader compatibility.
 
 ### **Key Improvements**
-Task Editing: I added a feature to allow users to edit tasks by double-clicking on them. Users can update the task text without having to delete and re-add it.
-Keyboard Accessibility: Enabled users to add tasks and save edits using the Enter key, improving the overall user experience.
+1. Task Editing: I added a feature to allow users to edit tasks by double-clicking on them. Users can update the task text without having to delete and re-add it.
+2. Keyboard Accessibility: Enabled users to add tasks and save edits using the Enter key, improving the overall user experience.
 Clear All Button: Added functionality to clear all tasks at once, resetting the app with one click.
 Improved Accessibility: Focused on making the app more accessible by using ARIA attributes and ensuring better screen reader compatibility.
 
@@ -86,11 +86,13 @@ The current version of the To-Do list has two primary features:
 4.  Store tasks in **localStorage** so the to-do list persists across page reloads.
 5. Added the **Clear All** button to delete the all task and also remove it from the local storage.
 6. Added some features to enhance accessibility.
+7. Added the functionality to sort the taks in alphabatical and in important.
 
 In the next iteration, I plan to:
-- Add the sorting feature
 - Make the design **more visually appealing** and **responsive** for mobile use.
-
+- Add the due date for the tasks.
+- Adding the category to tasks.
+- Adding the sorting functionality to sort them as completed, not completed.
 
 ## Author
 
